@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  fcamarasantos_challenge:
+    container_name: fcamarasantos_challenge_container
+    image: postgres:16.1
+    ports:
+      - 2222:5432
+    environment:
+      POSTGRES_PASSWORD: fcamarasantos_challenge_pw
+      POSTGRES_USER: fcamarasantos_challenge_user
+      POSTGRES_DB: fcamarasantos_challenge_db
